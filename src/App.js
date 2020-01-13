@@ -2,7 +2,7 @@ import React from 'react'
 import { Container, Row, Col, Card } from 'react-bootstrap'
 import './App.css'
 
-function App() {
+function App(props) {
   const movies = [
     {
       id: 1,
@@ -58,8 +58,8 @@ function App() {
       <Row>
         {movies.map(movie => {
           return (
-            <Col xs={3}>
-              <Card>
+            <Col xs={3} key={movie.id}>
+              <Card onClick={() => props.history.push(`/movie/${movie.id}`)}>
                 <Card.Img variant="top" src={movie.image} />
                 <Card.Body>
                   <Card.Title>{movie.title}</Card.Title>
