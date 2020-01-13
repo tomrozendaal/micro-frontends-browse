@@ -14,6 +14,16 @@ module.exports = {
         use: {
           loader: 'babel-loader'
         }
+      },
+      {
+        test: /\.json$/,
+        loader: 'file-loader',
+        type: 'javascript/auto',
+        options: {
+          name() {
+            return 'serve.json'
+          }
+        }
       }
     ]
   }
