@@ -1,9 +1,4 @@
 {
   "presets": ["env", "react"],
-  "plugins": [
-    "transform-object-rest-spread",
-    "syntax-class-properties",
-    "transform-class-properties",
-    "babel-plugin-css-modules-transform"
-  ]
+  "plugins": ["transform-object-rest-spread", "syntax-class-properties", "transform-class-properties"]
 }
