@@ -6,3 +6,7 @@
   margin-top: 15px;
   cursor: pointer;
 }
+
+#browse .card-body {
+  height: 120px;
+}
