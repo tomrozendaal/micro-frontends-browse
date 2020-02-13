@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Container, Row, Col, Card } from 'react-bootstrap'
+import { Container, Row, Col, Card, ButtonToolbar, ButtonGroup, Button } from 'react-bootstrap'
 import { getMovies } from './movie-service'
 import './App.css'
 
@@ -12,6 +12,16 @@ function App(props) {
 
   return (
     <Container id="browse">
+      <Row>
+        <Col xs={3}>
+          <ButtonToolbar>
+            <ButtonGroup>
+              <Button variant="outline-dark">a-z</Button>
+              <Button variant="outline-dark">z-a</Button>
+            </ButtonGroup>
+          </ButtonToolbar>
+        </Col>
+      </Row>
       <Row>
         {movies.map(movie => {
           return (
