@@ -10,3 +10,7 @@
 #browse .card-body {
   height: 120px;
 }
+
+#browse .btn-group {
+  margin-right: 15px;
+}

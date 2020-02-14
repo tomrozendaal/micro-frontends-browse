@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Container, Row, Col, Card, ButtonToolbar, ButtonGroup, Button } from 'react-bootstrap'
 import { getMovies } from './movie-service'
-import './App.css'
 
 function App(props) {
   const [movies, setMovies] = useState([])
@@ -15,6 +14,9 @@ function App(props) {
       <Row>
         <Col xs={3}>
           <ButtonToolbar>
+            <ButtonGroup>
+              <Button variant="outline-dark">Filter</Button>
+            </ButtonGroup>
             <ButtonGroup>
               <Button variant="outline-dark">a-z</Button>
               <Button variant="outline-dark">z-a</Button>
